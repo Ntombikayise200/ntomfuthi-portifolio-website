@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Resetting default margin and padding */
+        body, h1, ul {
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Header Navbar Styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #fff; 
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+            z-index: 1000; 
+        }
+
+        .logo img {
+            max-height: 50px;
+            width: auto;
+            margin-left: 20px;
+        }
+
+        .menu {
+            margin-right: 20px; 
+        }
+
+        .menu-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu-list-items {
+            padding: 1rem; /* Adjust padding */
+        }
+
+        .menu-list-items a {
+            text-decoration: none;
+            color: #333; /* Change link color */
+            transition: color 0.3s ease; /* Add transition effect */
+        }
+
+        .menu-list-items a:hover {
+            color: #007bff; /* Change link color on hover */
+        }
+        
+
+        
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none; 
+            }
+            .logo img {
+                margin-left: 10px; 
+            }
+            .menu-toggle {
+                display: block;
+                padding: 1rem;
+                cursor: pointer;
+            }
+         
+        }
+        .intro {
+    display: flex;
+    align-items: center;
+}
+
+.about-card {
+    background-color: #fff; /* Card background color */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    padding: 20px; /* Padding inside the card */
+    max-width: 600px; /* Set max-width for the card */
+    margin-right: auto; /* Auto margin to push the card to the left */
+}
+
+.my-heading {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+    color: #333; 
+}
+
+.lead-para {
+    font-size: 16px;
+    line-height: 1.6; 
+    margin-bottom: 20px; 
+}
+
+
+.profile-picture {
+    flex: 1;
+    text-align: center; 
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 400px; 
+    height: auto;
+}
+
+.contact-use {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.contact-details {
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.greet-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-heading {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.contact-text {
+    font-size: 18px;
+    margin-bottom: 10px; 
+}
+
+.details {
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+}
+.contact-card {
+    background-color: #fff; /* Card background color */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
+    padding: 20px; /* Padding inside the card */
+    max-width: 600px; /* Set max-width for the card */
+    text-align: center; /* Center the contents of the card */
+    margin: auto; /* Center the card itself */
+}
+
+.footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer .footer-menu {
+            margin-bottom: 20px;
+        }
+
+        .footer .footer-menu-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer .footer-menu-list .footer-list-items {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .footer .footer-menu-list .footer-links {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="NN.jpg">
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-list-items">
+                    <a class="links" href="#home">Home</a>
+                </li>
+               
+                <li class="menu-list-items">
+                    <a class="links" href="#about">About Me</a>
+                </li>
+                <li class="menu-list-items">
+                    <a class="links" href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+
+
+<section id="home" class="display-video">
+    <div class="card">
+   
+        <video width="1500" height="450" controls>
+    
+          <source src="MicrosoftTeams-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+    </div>
+   
+</section>
+    <br>
+<section id="about" class="intro">
+    <div class="intro-text">
+   
+
+        <div class="about-text">
+            <h1 class="my-heading">Ntomfuthi Lungile Ntshangase</h1>
+            <div class="about-card">
+            <p class="lead-para">
+                As a recent graduate with a National Diploma in Information Technology (Informatics) and IT System Support NQF level 5,
+                along with two years of hands-on experience in software development, I'm eager to embark on my career. 
+                My strong educational background and passion for learning about technology make me a motivated and quick learner,
+                ready to contribute my knowledge and adaptability to a dynamic team.
+                I am committed to continuously enhancing my skills and knowledge while contributing positively to the projects I am involved in.
+            </p>
+            <p> In my previous roles, I've had the opportunity to work on diverse projects,
+                collaborating closely with cross-functional teams to deliver high-quality solutions.
+                Whether it's troubleshooting complex issues or implementing innovative features, 
+                I thrive in fast-paced environments where I can apply my problem-solving skills and creativity.
+                I'm committed to staying updated with the latest trends and technologies in the industry, 
+                ensuring that my contributions are always aligned with best practices and industry standards.</p>
+            </div>
+            </div>
+    </div>
+    <div class="profile-picture">
+        <img src="Media (1).jpg" alt="Profile Picture">
+    </div>
+</section>
+<hr>
+<section id="contact" class="contact-use">
+    <div class="contact-card">
+    <div class="contact-details">
+        <h1 class="greet-heading">My Contact Details</h1>
+        <div class="details">
+            <h5 class="contact-heading"><i class="fas fa-envelope"></i> EMAIL</h5>
+            <p class="contact-text">ntomfutuhilungile2@gmail.com</p>
+        </div>
+        <div class="details">
+            <h5 class="contact-heading"><i class="fas fa-phone"></i> PHONE</h5>
+            <p class="contact-text">+27828197561</p>
+        </div>
+        <div class="details">
+            <h5 class="contact-heading"><i class="fas fa-map-marker-alt"></i> ADDRESS</h5>
+            <p class="contact-text">629 Asteria Pretorious Street</p>
+            <p>Arcadia Pretoria</p>
+            <p>Gauteng</p>
+        </div>
+        <footer class="footer">
+            <div class="social-links">
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://www.linkedin.com/in/ntomfuthi-ntshangase-10269521a" aria-label="LinkedIn Profile" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>
+                        <!-- Add more social links as needed -->
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://twitter.com/yourtwitter" aria-label="Twitter Profile" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>
+                        <li class="footer-list-items">
+                            <a class="footer-links" href="https://facebook.com/yourfacebook" aria-label="Facebook Profile" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <!-- Add more social links as needed -->
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</div>
+</section>
+
+
+</body>
+</html>
