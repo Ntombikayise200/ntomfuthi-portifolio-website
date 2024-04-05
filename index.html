@@ -140,15 +140,7 @@
     border-bottom: 1px solid #ccc; 
     padding-bottom: 20px; 
 }
-.contact-card {
-    background-color: #fff; /* Card background color */
-    border-radius: 10px; /* Rounded corners for the card */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the card */
-    padding: 20px; /* Padding inside the card */
-    max-width: 600px; /* Set max-width for the card */
-    text-align: center; /* Center the contents of the card */
-    margin: auto; /* Center the card itself */
-}
+
 
 .footer {
             background-color: #333;
@@ -177,6 +169,16 @@
             text-decoration: none;
             font-size: 20px;
         }
+        .map-container {
+        width: 100%;
+        height: 400px; /* Adjust the height as needed */
+        margin-top: 20px; /* Adjust spacing */
+        border-radius: 10px; /* Rounded corners */
+        overflow: hidden; /* Hide any overflow */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    }
+
+   
     </style>
 </head>
 <body>
@@ -247,7 +249,7 @@
 </section>
 <hr>
 <section id="contact" class="contact-use">
-    <div class="contact-card">
+    
     <div class="contact-details">
         <h1 class="greet-heading">My Contact Details</h1>
         <div class="details">
@@ -263,6 +265,9 @@
             <p class="contact-text">629 Asteria Pretorious Street</p>
             <p>Arcadia Pretoria</p>
             <p>Gauteng</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.812085017103!2d28.214634214992886!3d-25.7471449836278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c66b7a70abf%3A0x53c8b70cc2e4cb63!2s629%20Asteria%20Pretorious%20St%2C%20Arcadia%2C%20Pretoria%2C%200000%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1649164283157!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <footer class="footer">
             <div class="social-links">
@@ -292,7 +297,7 @@
                 </nav>
             </div>
         </footer>
-    </div>
+   
 </div>
 </section>
 
