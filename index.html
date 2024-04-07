@@ -110,36 +110,81 @@
     height: auto;
 }
 
-.contact-use {
-    background-color: #f9f9f9;
-    padding: 40px;
-}
-
 .contact-details {
-    max-width: 600px; 
-    margin: 0 auto; 
+    text-align: center;
 }
 
-.greet-heading {
-    font-size: 32px;
+#greet-heading {
     margin-bottom: 20px;
 }
 
-.contact-heading {
-    font-size: 24px; 
-    margin-bottom: 10px; 
+form {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.contact-text {
-    font-size: 18px;
-    margin-bottom: 10px; 
+.form-group {
+    margin-bottom: 20px;
 }
 
-.details {
-    margin-bottom: 20px; 
-    border-bottom: 1px solid #ccc; 
-    padding-bottom: 20px; 
+label {
+    display: block;
+    margin-bottom: 5px;
 }
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    margin-top: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-list-items {
+    margin: 0 10px;
+}
+
+.footer-links {
+    color: #333;
+    font-size: 24px;
+}
+
+.footer-links:hover {
+    color: #007bff;
+}
+
+
+
+
 
 
 .footer {
@@ -249,25 +294,27 @@
 </section>
 <hr>
 <section id="contact" class="contact-use">
-    
     <div class="contact-details">
         <h1 class="greet-heading">My Contact Details</h1>
-        <div class="details">
-            <h5 class="contact-heading"><i class="fas fa-envelope"></i> EMAIL</h5>
-            <p class="contact-text">ntomfutuhilungile2@gmail.com</p>
-        </div>
-        <div class="details">
-            <h5 class="contact-heading"><i class="fas fa-phone"></i> PHONE</h5>
-            <p class="contact-text">+27828197561</p>
-        </div>
-        <div class="details">
-            <h5 class="contact-heading"><i class="fas fa-map-marker-alt"></i> ADDRESS</h5>
-            <p class="contact-text">629 Asteria Pretorious Street</p>
-            <p>Arcadia Pretoria</p>
-            <p>Gauteng</p>
-        </div>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.812085017103!2d28.214634214992886!3d-25.7471449836278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c66b7a70abf%3A0x53c8b70cc2e4cb63!2s629%20Asteria%20Pretorious%20St%2C%20Arcadia%2C%20Pretoria%2C%200000%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1649164283157!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <br>
+        <form id="contact-form" method="post" action="send_email.php">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        <br>
+        <div class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.812085017103!2d28.214634214992886!3d-25.7471449836278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c66b7a70abf%3A0x53c8b70cc2e4cb63!2s629%20Asteria%20Pretorious%20St%2C%20Arcadia%2C%20Pretoria%2C%200000%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1649164283157!5m2!1sen!2sus" width="1500" height="450" style="border:0;"  loading="lazy"></iframe>
         </div>
         <footer class="footer">
             <div class="social-links">
@@ -279,7 +326,6 @@
                                 <span class="sr-only">LinkedIn</span>
                             </a>
                         </li>
-                        <!-- Add more social links as needed -->
                         <li class="footer-list-items">
                             <a class="footer-links" href="https://twitter.com/yourtwitter" aria-label="Twitter Profile" target="_blank">
                                 <i class="fab fa-twitter"></i>
@@ -292,13 +338,11 @@
                                 <span class="sr-only">Facebook</span>
                             </a>
                         </li>
-                        <!-- Add more social links as needed -->
                     </ul>
                 </nav>
             </div>
         </footer>
-   
-</div>
+    </div>
 </section>
 
 
